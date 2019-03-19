@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+var = 0;
+
+100.times do
+	var = var + 1
+	User.create(email: "fabio#{var}@hotmail.com", password:123123);
+end
