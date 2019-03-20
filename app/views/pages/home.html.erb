@@ -2,6 +2,10 @@
 <p>Find me in app/views/pages/home.html.erb</p>
 <ul>
 	<% @rooms.each do |room|  %>
-		<li><%= room.inspect %></li>
+		<li>
+			<%= link_to new_booking_path(room_id: room) do %>
+				<%= room.inspect %>
+			<% end %>
+		</li>
 	<% end %>
 </ul>

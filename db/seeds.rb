@@ -11,3 +11,8 @@ var = 0;
 	var = var + 1
 	User.create(email: "fabio#{var}@hotmail.com", password:123123);
 end
+
+8.times do
+	var = var + 1
+	Room.create(price: var, room_type: 2, user_id: 1);
+end
